@@ -2,7 +2,7 @@ pipeline {
     agent any
  
     environment {
-        APP_NAME       = 'microservice-project'
+        APP_NAME       = 'micro-services'
         AWS_REGION     = 'us-east-1'
         AWS_ACCOUNT_ID = '841162684034'
         ECR_REGISTRY   = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
