@@ -21,7 +21,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    sh 'sonar-scanner'/bin/sonar-scanner \
+                  sh "${tool 'SonarScanner'}/bin/sonar-scanner \ 
                           -Dsonar.projectKey= 'backend-project'\
                           -Dsonar.projectName='backend-project' \
                           -Dsonar.sources=. \
